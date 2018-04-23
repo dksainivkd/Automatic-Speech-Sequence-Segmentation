@@ -1,167 +1,352 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<style type="text/css">
-			body{font-family: sans-serif;}
-			p{display: inline-block;}
-			img{display: block;}
-			.container{width: 90%;position absolute;margin: auto;}
-			.title{position: relative;width: 90%;margin: auto;text-align: center;font-weight: bold;font-size: 18px;padding: 1%;}
-			.section{position: relative;width: 90%;margin: auto;padding: 2%;}
-			.subsection{position: relative; width: 98%;text-align: justify;padding: 10px;}
-			.heading{position: relative; width: 98%;text-align: left;font-size: 14px;font-weight: bold;}
-			.text{width: 95%;font-size: 12px;text-align: justify;padding: 10px 0px 10px 0px;}
-			.authors{position: relative;width: 80%;margin: auto;padding: 2%;font-style: italic;text-align: center;font-size: 12px;}
-			.image{width: 95%;font-size: 12px;text-align: left;}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<h1  style="font-size:60px;" class="title">Automatic Speech Sequence Segmentation </h1>
+<head>
+<title>Automatic speech sequence segmentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 10px;
+  font-size: 12px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#navbar a.active {
+  
+  color: white;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+#title{
+    padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow: 3px 2px red;
+    
+}
+#intro{
+    padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+#approach{
+    padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	}
+#result{
+    padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	}
+#con{padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-			<div class="authors">
+#team{padding: 80px 20px 80px 20px;
+    margin: 1px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-				<!-- Start edit here  -->
-				<h4><p>Deepak Kumar, Roll No.: 150122012, Branch: CST</p>; &nbsp; &nbsp;
-					<p>Vipul Kumar Vijay , Roll No.: 150103076, Branch: Mechanical</p>; &nbsp; &nbsp;</h4>
-				<!-- Stop edit here -->
+h1 strong {
+	text-decoration:underline;
+	font-weight: 900;
+	font-size: 36px;
+}
 
-			</div>
+
+h2 {
+     text-decoration:underline;
+	line-height: 20px;
+	margin: 0;
+	font-size: 28px;
+	font-weight: 1500;
+	margin-bottom: 20px;
+	color: #0;
+}
+h3 {
+     text-decoration:underline;
+	font-size: 20px;
+	font-weight: 600;
+}
+h4 {
+     text-decoration:underline;
+	color: #0;
+	font-size: 15px;
+}
+h5 {
+      text-decoration:underline;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+#intro p{
+      
+    font-family: 'Open Sans', sans-serif;
+	color: #0;
+	line-height: 24px;}
+#approach  p{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 24px;
+}
+
+#con  p{
+       
+      font-family: 'Open Sans', sans-serif;
+	color: #0;
+	line-height: 24px;
+	}
+           
+</style>
+</head>
 
 
-			<div class="section">
-				<div class="heading">Abstract</div>
-				<div class="text">
+<body>
 
-					<!-- Start edit here  -->
-					This is the place where you have to write your abstract. Write a brief description about your work here. Mention the features that you have used in your work and their respective motivations.
-					<!-- Stop edit here -->
+<div id="navbar">
+  <a class="active"  href="javascript:void(0)"><a href="index.html">Home</a></a>
+  <a href="javascript:void(0)"><a href="#intro">Introduction</a></a>
+  <a href="javascript:void(0)"><a href="#approach">Proposed Approach</a></a>
+  <a href="javascript:void(0)"><a href="#result">Result</a></a>
+  <a href="javascript:void(0)"><a href="#con">Conclusion</a></a>
+  <a href="javascript:void(0)"><a href="#team">Team Member</a></a>
+</div>
 
-				</div>
-			</div>
+<div id ="title">
+  <h1>Automatic Speech Sequence Segmentation</h1>
+</div>
 
-			<div class="section">
-				<div class="heading">1. Introduction</div>
-				<div class="text">
+<div class="content">
+    <div id = "intro">
+	<div></br></div></br></br></br></br></br></br>
+       <h1><strong>Introduction</strong></h1>
+       <h2><strong>Introduction to Problem</strong></h2>
+       <p>Speaker recognition is to recognize persons from their       voice. No two individuals sound identical because their vocal tract shapes, larynx sizes, other parts of their voice production organs, manner of speaking including the use of a particular accent, rhythm, in tonation style, pronunciation pattern and choice of vocabulary are different. State-of-the-art speaker recognition systems use number of these features in parallel, attempting to cover different aspects and employing them in complementary ways to achieve more accurate recognition.</p>
+       <h2> <strong>Figure</strong> </h2>
+       <p>A sample <B> (a) Spectrogram </B> and its <B> (b) Radon  Transform </B> in one chosen direction of three different speakers.</p>
+       <p><img src="img/spectogram.jpg" alt="Spectrogram and Radon Transform" width="500px" height=""/></p>     
+   </div> <!--Introduction close div -->
+   
+   <div id = "approach">
+   <div></br></div></br></br></br></br></br></br>
+      <h1><strong>Proposed Approach</strong></h1>
+      <h4> Voice Activity Detection</h4>
+      <p>This is the pre-filter applied for all signals. There are two methods:</p>
+<p>1.Energy Based Method: Filters out intervals with relatively low energy but is sensitive to noise.</p>
+<p>2.Long-Term Spectral Divergence: Compare long term spectral envelope with noise spectrum. This is more Robust to noise.</p> 
+      
+      <h4> Speech Spectogram</h4>
+      <p>It is well known that the speech signal is non-stationary
+	in nature. However, it is assumed that the speech signal
+remains stationary over a short duration of 20–30 ms. Hence, the
+pre-emphasized signal is segmented into M frames of 20 ms
+duration with a 10 ms overlap between two consecutive frames to
+retain a good quality of the signal and to avoid loss of information</p>
+      <p>Windowing is carried out to reduce the edge effects at the
+beginning and the end of the frame. In our study Hamming
+window is multiplied with each frame</p>
+      <img src="img/hammingwindow.jpg">
+      <p>Fourier transform of each frame is computed to produce an
+estimate of the short-term frequency content of the signal, called
+as spectrogram. The spectrogram is the squared magnitude of the
+time-dependent Fourier transform versus time. N length DFT of a
+windowed frame is computed to obtain the power spectrum as
+below</p>
+      <img src= "img/Powespectrum.jpg">
+      <p>where Xi(k) is the kth component of DFT of xi(n) (windowed
+frame). Re {.} and Im {.} indicate real and imaginary parts,
+respectively. The spectrums of these frames f(i,k) are concatenated
+to construct the speech spectrogram </p>
+      <img src="img/Spectogram1.jpg">
+      <p>In the proposed approach, the speech spectrogram is treated as
+an image. Contextual variations in speech images are similar to
+real-world changes in scene analysis. These variations can be
+captured by applying image processing techniques to these
+patterns.</p>
+      <h4> Radon Transform </h4>
+      <p> Radon transform is based on the parameterization of lines and the evaluation of integrals of an image along these lines. Due to inherent properties of Radon transform, it is a useful tool to
+capture the directional features of an image. Basically, the Radon
+transform adds up the pixel intensity values in the given image
+(spectrogram) or time frequency distribution along a straight line
+in a particular direction at a specific displacement</p>
+      <img src="img/Radon.png">
+      <p> The spectrogram represents acoustic features like energy,
+pitch, fundamental frequency, formants and time in the form of
+a pattern.The Radon transform effectively captures
+these features in the pattern by projecting it onto different
+orientation slices.</p>
+      <p>The Radon projection is obtained by summing
+all the intensity values of those pixels that are within the circle
+surrounding the pattern to be recognized and on the line that is
+perpendicular to the ridge. For a given ridge, every pixel within
+the circle will be projected onto it along the perpendicular direction. This gives a rise to one Radon slice in the Radon
+domain. The proposed technique computes Radon projections of
+the spectrogram in different orientations</p>
+      <p>edundant
+information by the increased number of Radon projections. Hence in
+the subsequent experiments only seven Radon projections have been
+used [22.5, 45, 67.5, 90, 112.5, 135, 157.5].</p>
+      <h4> Discrete Cosine Transform</h4>
+      <p>DCT is a well-known signal analysis tool used in data compression due to its compact representation capability. It has an
+excellent energy compaction property for highly correlated data.
+This helps in reduction of the feature vector dimension.</p>
+      <img src="img/DCT.jpg">
+      <p> There is a significant improvement in the recognition rate as the
+use of DCT coefficients increases up to 30%. Any further increase
+in the coefficients does not improve the performance significantly. Hence we have selected 30% coefficients of DCT as
+significant coefficients in all the recognition. This happens because most of the information lies in the lower spectrum. </p>
+      
+      
 
-					<!-- Start edit here  -->
-					Speaker recognition is to recognize persons from their voice. No two individuals sound identical because their vocal tract shapes, larynx sizes, other parts of their voice production organs, manner of speaking including the use of a particular accent, rhythm, in tonation style, pronunciation pattern and choice of vocabulary are different. State-of-the-art speaker recognition systems use number of these features in parallel, attempting to cover different aspects and employing them in complementary ways to achieve more accurate recognition.
-					<!-- Stop edit here -->
+      
+   
+   </div> <!--Proposed approach close div-->
+   
+   
+   <div id = "result">
+   <div></br></div></br></br></br></br></br></br>
+      <h2>Experiments and Results</h2>
+      <h4><strong>Dataset Description </strong> </h4>
+      <p>As we did not find any good dataset we created our own dataset from youtube videos.</p>
+      <a href="https://drive.google.com/drive/folders/1yLMBpAata_gxS95SO6o5jFHXOZ43Iq8M">Link for the dataset</a>
+      <h4> <strong> Code</strong></h4>
+      <a href="https://github.com/rahulkmr75/speech_segmentation">Link for the code</a>
+      <p><h4> <strong>Discussion</strong></h4></p>
+      <p><u><strong>Why Spectogram?</u></strong></p>
+      <p> 1. In speaker identification system, high dimension feature set is preferred to enhance the performance. However, increased feature dimension requires more computational time and storage space. The classifier using high dimension feature set also requires more parameters to characterize a speaker model, e.g. Gaussian Mixture Model (GMM). This increases computational complexity, making real-time implementation more difficult. Furthermore, a large amount of data is required for the training.</p>
+      <p>2.An alternative approach to this is to extract effective and efficient feature vectors.Mel frequency cepstral coefficients (MFCC) and linear prediction cepstral coefficients (LPCC) are the two most common feature extraction techniques in speaker identification. MFCC is generally used because of its robustness in speaker identification. Since the elements of feature vectors are generally correlated, a large number of mixtures with full covariance matrix are necessary to provide good approximation. </p>
+      <p>3.The GMM with diagonal covariance matrix is used for both speaker identification and verification because of its computational simplicity.</p>
+      <p>4.Contextual variations in speech are better represented using a spectrogram and hence it is widely used as a tool for speech analysis</p>
+      <p>5.A spectrogram is a graphical display of the squared magnitude of the time-varying spectral characteristics of speech. It is compact and efficient in representation carrying information about energy, pitch, fundamental frequency,formants and timing. Spectrogram reading techniques have revealed that a speech spectrogram contains rich acoustic features that could be valuable in an automatic speech and speaker recognition system</p> 
+      <p>6.The technique we use here formulates the speaker identification problem into pattern recognition of images and resolving it using machine learning tools. The technique uses Radon Projections of speech spectogram in different angles to derieve the speaker's voice pattern. And to get more efficient and effective speaker features we use DCT (Dicrete Cosine Transform). As our dataset was small enough we did not use the DCT in our project.</p>
+      <strong><u>Why Radon Transform?</u></strong>
+      <p>1. Radon transform is based on the parameterization of lines and the evaluation of integrals of an image along these lines. Due to inherent properties of Radon transform, it is a useful tool to capture the directional features of an image.</p>
+      <p> 2. Basically, the Radon transform adds up the pixel intensity values in the given image (spectrogram) or time frequency distribution along a straight line in a particular direction at a specific displacement.</p>
+      <p>3. The spectrogram represents acoustic features like energy, pitch, fundamental frequency, formants and time in the form of a pattern.The Radon transform effectively captures these features in the pattern by projecting it onto different orientation slices.</p>
+      <p>4.The Radon projection is obtained by summing all the intensity values of those pixels that are within the circle surrounding the pattern to be recognized and on the line that is perpendicular to the ridge.Another advantage of using Radon transform in the proposed approach is its insensitivity to additive noise.</p>
+      
+      <strong><u>Why Discrete Cosine Transform?</u> </strong>
+      <p>1. DCT is an orthogonal transformation that is very widely used in image compression and is widely accepted in the multimedia standards. DCT belongs to a family of 16 trigonometric transformations</p>
+      <p>2.DCT is used in signal and image processing as it has a strong "energy compaction" property for highly correlated data.</p>
+      <p>3. Can use FFT like algorithms to compute them in O(nlogn) time.</p>
+      <h4> <strong>Results</strong></h4>
+      <p> Voice Activity Signal / input signal </p>
+      <img src= "img/inputSignal.png" width="800px" height="400px">
+      <p> Spectrum of All frame and Spectrum of only speech portion after applying VAD </p>
+      <img src= "img/spectrum.png" width="800px" height="500px">
+      <p> Correlation plot of features after taking the mean and deviation of features </p>
+      <img src= "img/meanD.png" width="800px" height="400px">
+      <p>Plot of projection after taking the Radon projection of feature sptogram</p>
+      <hr><img src= "img/projectionSpectrum.png" width="550px" height="400px"> <img src="img/projectionSpectrum1.png" width="550px" heigth="300px">
+      
+      
+      
+      
 
-				</div>
+   
+   </div> <!--Result close div-->
+   
+   
+   <div id = "con">
+    <h2> Conclusion</h2>
+      <p> We tried to identify speaker transitions using radon transform and DCT on speech spectogram. The results we got were unsatisfactory although the correlation matrix  of DCT coefficents were more better in distingusihing two speakers than the correlation matrix of only Radon Transform Projections. The accuracy we got in detecting speaker transition was less than 50%. Hence we don't recommend using spectogram for speaker transition or identification tasks. 
+    
+      <h4> Future Extension </h4>
+      <p> 1.The noise robustness can be improved.</p>
+      <p> 2. Furthermore, advance speaker diarization should be able to handle presence of overlapped speech on which the occurrence of overlapping speech almost regularly presents in natural conversation.</p>
+      <h4>Applications </h4>
+      <p> 
+    One of the most important application will be in transcription of conversations. 
+    It can be used to crop the speech of a specific person of interest from a long audio clip which can be used as evidence in criminal cases.</p>
 
-				<div class="subsection">
-					<div class="heading">1.1 Introduction to Problem</div>
-					<div class="text">
+   
+   </div> <!--Conclusion close div-->
+   
+   
+   <div id = "team">
+      <h2>Team Members</h2>
+      <hr>
+      <img src="img/member/01.jpg" alt="..." class="team-img" width="200px" height="160px">           <img src="img/member/02.jpg" alt="..." class="team-img"   width="160px" height="160px" hspace="50">
+      <pre><strong>Deepak Kumar                    Vipul Kumar Vijay</strong></pre>
+      <pre><strong>Roll No: 150122012              Roll No: 150103076</strong></pre>
+      <pre><strong>Branch: CST                     Branch : Mechanical</strong></pre>
+      
+       
+         
 
-						<p>Speaker recognition is to recognize persons from their voice. No two individuals sound identical because their vocal tract shapes, larynx sizes, other parts of their voice production organs, manner of speaking including the use of a particular accent, rhythm, in tonation style, pronunciation pattern and choice of vocabulary are different. State-of-the-art speaker recognition systems use number of these features in parallel, attempting to cover different aspects and employing them in complementary ways to achieve more accurate recognition.</p>
-						Write something here.
-						<!-- Stop edit here -->
+   
+   </div> <!--team member close div-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+  
 
-					</div>
-				</div>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
-				<div class="subsection">
-					<div class="heading">1.2 Figure</div>
-					<div class="image">
-
-						<!-- Start edit here  -->
-						Block diagram of the system. All images must be put in a Pictures folder. An example image
-						<img src="https://github.com/dksainivkd/dsp_project/blob/master/img/Spectrogram.JPG" alt="This text displays when the image is umavailable" width="300px" height=""/>
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-				<div class="subsection">
-					<div class="heading">1.3 Literature Review</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-				<div class="subsection">
-					<div class="heading">1.4 Proposed Approach</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Describe your approach briefly here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-				<div class="subsection">
-					<div class="heading">1.5 Report Organization</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-			</div>
-
-			<div class="section">
-				<div class="heading">2. Proposed Approach</div>
-				<div class="text">
-
-					<!-- Start edit here  -->
-					Write something here.
-					<!-- Stop edit here -->
-
-				</div>
-			</div>
-
-			<div class="section">
-				<div class="heading">3. Experiments &amp; Results</div>
-				<div class="subsection">
-					<div class="heading">3.1 Dataset Description</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-				<div class="subsection">
-					<div class="heading">3.2 Discussion</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop efdvsdit here -->
-
-					</div>
-				</div>
-			</div>
-
-			<div class="section">
-				<div class="heading">4. Conclusions</div>
-				<div class="subsection">
-					<div class="heading">4.1 Summary</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-				<div class="subsection">
-					<div class="heading">4.2 Future Extensions</div>
-					<div class="text">
-
-						<!-- Start edit here  -->
-						Write something here.
-						<!-- Stop edit here -->
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</body>
+</body>
 </html>
