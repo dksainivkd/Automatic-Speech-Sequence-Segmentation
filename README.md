@@ -5,3 +5,6 @@ Built and trained Gaussian Mixture Model and K Means Clustering model to segment
 ## Code Description:
 In code folder there is two program file functions.py and main.py.
 Run that main program with two arguments audio file name and sampling rate of the aaudio.
+
+
+sdjhfgy yskgrk gskrh fksuhr kgk hguksrg ua 
